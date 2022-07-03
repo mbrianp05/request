@@ -5,9 +5,14 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Libsstack\\Request\\": "src/",
-            "Libsstack\\Request\\Tests\\": "tests/"
+            "Libsstack\\Request\\": "src/"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Libsstack\\Request\\Tests\\": "tests/"
+        },
+        "files": ["./bootstrap.php"]
     },
     "authors": [
         {
