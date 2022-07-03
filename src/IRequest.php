@@ -14,7 +14,7 @@ interface IRequest
 
   public function cookie(string|array $key = null): Cookie|string|array;
 
-  public function file(): File;
+  public function file(): ?File;
 
   public function server(): Server;
 }

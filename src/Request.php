@@ -9,7 +9,7 @@ class Request implements IRequest
   protected Session $session;
   protected Server $server;
   protected Cookie $cookie;
-  protected File $file;
+  protected ?File $file;
 
   public function __construct(
     array $queries = null,
@@ -96,7 +96,7 @@ class Request implements IRequest
     return $sessions;
   }
 
-  public function file(): File
+  public function file(): ?File
   {
     return $this->file;
   }
