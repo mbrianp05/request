@@ -8,9 +8,14 @@ class File
   {
   }
 
-  public static function load(): static
+  public static function load(): ?static
   {
-    return new static($_FILES[\array_key_first($_FILES)]);
+    $file = $_FILES[\array_key_first($_FILES)] ?? null;
+
+    if (null == $file)
+      return null;
+
+    return new static($file);
   }
 
   public function name(): string
