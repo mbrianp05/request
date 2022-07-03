@@ -1,0 +1,22 @@
+{
+    "name": "libsstack/request",
+    "description": "A simple small request handler",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Libsstack\\Request\\": "src/",
+            "Libsstack\\Request\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Brian Monteagudo Pérez",
+            "email": "53273750+mbrianp05@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "phpunit/phpunit": "10.0.x-dev"
+    }
+}
