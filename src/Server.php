@@ -51,6 +51,6 @@ class Server
 
   public function method(): string
   {
-    return $this->params['HTTP_METHOD'];
+    return $this->params['REQUEST_METHOD'];
   }
 }
