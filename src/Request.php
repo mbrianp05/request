@@ -127,6 +127,6 @@ class Request implements IRequest
     if (null == $method)
       return $this->server()->method();
 
-    return mb_convert_case($method, MB_CASE_UPPER) == $method;
+    return strtoupper($method) == $this->server()->method();
   }
 }
