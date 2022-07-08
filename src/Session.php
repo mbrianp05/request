@@ -30,6 +30,7 @@ class Session extends Params
 
   public function set(string $key, string $value): static
   {
+    $this->params[$key] = $value;
     $_SESSION[$key] = $value;
 
     return $this;
@@ -44,13 +45,8 @@ class Session extends Params
 
   public function clean(): static
   {
-    unset($_SESSION);
+    session_destroy();
 
     return $this;
-  }
-
-  public function __destruct()
-  {
-    session_destroy();
   }
 }

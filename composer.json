@@ -6,13 +6,13 @@
     "autoload": {
         "psr-4": {
             "Libsstack\\Request\\": "src/"
-        }
+        },
+        "files": ["bootstrap.php"]
     },
     "autoload-dev": {
         "psr-4": {
             "Libsstack\\Request\\Tests\\": "tests/"
-        },
-        "files": ["bootstrap.php"]
+        }
     },
     "authors": [
         {
